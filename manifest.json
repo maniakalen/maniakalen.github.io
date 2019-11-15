@@ -1,7 +1,7 @@
 {
-  "short_name": "QR Scanner",
-  "name": "QR Code Scanner",
-  "description": "QR code scanner progressive web application",
+  "short_name": "Concatel QR Scanner",
+  "name": "Concatel QR Code Scanner",
+  "description": "QR code scanner PWA",
   "display": "standalone",
   "orientation": "portrait",
   "icons": [
@@ -15,7 +15,7 @@
     "sizes": "512x512",
     "type": "image/png"
   }],
-  "start_url": "/index.html?utm_source=homescreen",
+  "start_url": "/index.html",
   "theme_color": "#e4e4e4",
   "background_color": "#fff"
 }
