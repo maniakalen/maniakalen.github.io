@@ -1,9 +1,6 @@
 {
-  "schema": "http",
-  "host": "blueprintdev.cvteam.es",
-  "endpoint": "services/execute.php",
-  "login": {
-    "pfwlogin_user": "peter.georgiev",
-    "pfwlogin_password": "test"
+  "url": "http://blueprintdev.cvteam.es/services/execute.php",
+  "params": {
+    "site": 1
   }
 }
