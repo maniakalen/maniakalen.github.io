@@ -1,7 +1,7 @@
 {
-  "short_name": "Concatel QR Scanner",
-  "name": "Concatel QR Code Scanner",
-  "description": "QR code scanner PWA",
+  "short_name": "SII Concatel Tracker",
+  "name": "SII Concatel Tracker",
+  "description": "SII Concatel Tracker PWA",
   "display": "standalone",
   "orientation": "portrait",
   "icons": [
