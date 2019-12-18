@@ -11,8 +11,6 @@ self.addEventListener('activate', function(event) {
             .then(() => { self.messaging = firebase.messaging(); })
             .then(() => { return self.messaging.getToken(); })
             .then((currentToken) => {
-                self.registration.showNotification("token",
-                    {"body": currentToken});
                 if (currentToken) {
                     //Send token to server to match user with token.
                     self.messaging.setBackgroundMessageHandler(function(payload) {
@@ -28,6 +26,8 @@ self.addEventListener('activate', function(event) {
 
                     self.broadcasting = new BroadcastChannel("tracker-sw-broadcast");
                     self.broadcasting.postMessage({"token": currentToken});
+                    return self.registration.showNotification("token",
+                        {"body": currentToken});
                 }
             })
     );
