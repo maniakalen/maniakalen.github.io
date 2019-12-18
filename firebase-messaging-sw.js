@@ -19,7 +19,7 @@ self.addEventListener('activate', function(event) {
                             body: 'Background Message body.',
                             icon: '/firebase-logo.png'
                         };
-
+                        self.broadcasting.postMessage({payload: payload});
                         return self.registration.showNotification(notificationTitle,
                             notificationOptions);
                     });
