@@ -1,7 +1,0 @@
-{
-  "url": "https://empleados.sii-concatel.com/services/execute.php",
-  "params": {
-    "site": 1
-  },
-  "refreshMs": 3000
-}

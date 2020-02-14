@@ -1,1 +1,30 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>SII Concatel employee checkin</title><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="description" content="Employee tracker for tracking SII Concatel employees working hours"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Employee tracker"><meta name="apple-mobile-web-app-status-bar-style" content="#e4e4e4"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="application-name" content="Employee tracker"><meta name="msapplication-TileColor" content="#e4e4e4"><meta name="msapplication-TileImage" content="/images/touch/mstile-150x150.png"><meta name="theme-color" content="#fff"><link rel="apple-touch-icon" href="/images/touch/apple-touch-icon.jpg"><link rel="icon" type="image/png" href="/images/touch/favicon-32x32.png" sizes="32x32"><link rel="icon" type="image/png" href="/images/touch/favicon-16x16.png" sizes="16x16"><link rel="shortcut icon" href="/images/touch/favicon.ico"><link rel="manifest" href="/manifest.json"><link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet"></head><body><div class="dialog_div_overlay hide"><div class="lds-dual-ring"></div></div><div class="app-layout" style="padding: 5px; overflow: scroll;">TEST</div><script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-app.js"></script><script src="https://www.gstatic.com/firebasejs/7.6.0/firebase-messaging.js"></script><script async src="https://cdn.jsdelivr.net/npm/pwacompat@2.0.6/pwacompat.min.js" integrity="sha384-GOaSLecPIMCJksN83HLuYf9FToOiQ2Df0+0ntv7ey8zjUHESXhthwvq9hXAZTifA" crossorigin="anonymous"></script><script type="text/javascript" src="main.12722e8b4fad34d2985f.bundle.js"></script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Tracker</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#1976d2">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="/assets/css/themes/white-blue.css" rel="stylesheet">
+<link rel="stylesheet" href="styles.ad4f998f03f9d022fcc2.css"></head>
+<body>
+  <div class="app-layout">
+  <app-root></app-root>
+  </div>
+  <noscript>Please enable JavaScript to continue using this application.</noscript>
+  <script type="application/javascript">
+      (() => {
+          window.addEventListener('online', (e) => {
+              navigator.serviceWorker.getRegistration('/').then(r => {
+                r.sync.register('action-sync').then((ev) => ev);
+              });
+          });
+      })();
+  </script>
+<script src="runtime-es2015.edb2fcf2778e7bf1d426.js" type="module"></script><script src="runtime-es5.edb2fcf2778e7bf1d426.js" nomodule defer></script><script src="polyfills-es5.6696c533341b95a3d617.js" nomodule defer></script><script src="polyfills-es2015.2987770fde9daa1d8a2e.js" type="module"></script><script src="main-es2015.9b7bf70c2a8d58febaec.js" type="module"></script><script src="main-es5.9b7bf70c2a8d58febaec.js" nomodule defer></script></body>
+</html>

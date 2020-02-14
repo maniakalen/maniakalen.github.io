@@ -1,1 +1,0 @@
-Maniakalen message

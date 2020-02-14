@@ -1,36 +1,29 @@
+importScripts('https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js');
+importScripts('https://www.gstatic.com/firebasejs/7.7.0/firebase-messaging.js');
+// importScripts('/__/firebase/init.js');
 
-importScripts("https://www.gstatic.com/firebasejs/7.6.0/firebase-app.js");
-importScripts("https://www.gstatic.com/firebasejs/7.6.0/firebase-messaging.js");
-self.messaging = null;
-self.broadcasting = null;
-self.addEventListener('activate', function(event) {
-    event.waitUntil(
-        fetch('messaging.json')
-            .then(data => data.json())
-            .then(data => firebase.initializeApp(data))
-            .then(() => { self.messaging = firebase.messaging(); })
-            .then(() => { return self.messaging.getToken(); })
-            .then((currentToken) => {
-                if (currentToken) {
-                    //Send token to server to match user with token.
-                    self.messaging.setBackgroundMessageHandler(function(payload) {
-                        const notificationTitle = 'Background Message Title';
-                        const notificationOptions = {
-                            body: 'Background Message body.',
-                            icon: '/firebase-logo.png'
-                        };
-                        self.broadcasting.postMessage({payload: payload});
-                        return self.registration.showNotification(notificationTitle,
-                            notificationOptions);
-                    });
-
-                    self.broadcasting = new BroadcastChannel("tracker-sw-broadcast");
-                    self.broadcasting.postMessage({"token": currentToken});
-                    return self.registration.showNotification("token",
-                        {"body": currentToken});
-                }
-            })
-    );
+// Initialize the Firebase app in the service worker by passing in the
+// messagingSenderId.
+firebase.initializeApp({
+  "apiKey": "AIzaSyAWn9_i_HDskLOSPW7_z4QpHhmR3UyGqBk",
+  "authDomain": "motherearth-1548070679223.firebaseapp.com",
+  "databaseURL": "https://motherearth-1548070679223.firebaseio.com",
+  "projectId": "motherearth-1548070679223",
+  "storageBucket": "motherearth-1548070679223.appspot.com",
+  "messagingSenderId": "741346420493",
+  "appId": "1:741346420493:web:cca16914b061cf9a6a7244",
+  "registrationToUse":false
 });
 
-
+// Retrieve an instance of Firebase Messaging so that it can handle background
+// messages.
+self.messaging = firebase.messaging();
+self.messaging.setBackgroundMessageHandler(function(payload) {
+  console.debug(payload);
+  const title = payload.data.title;
+  const option = {
+    body: payload.data.message,
+    icon: 'Path'
+  };
+  return self.registration.showNotification(title,option);
+});

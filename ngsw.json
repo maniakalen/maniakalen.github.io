@@ -1,0 +1,112 @@
+{
+  "configVersion": 1,
+  "timestamp": 1581544949045,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/favicon.ico",
+        "/firebase-messaging-sw.js",
+        "/index.html",
+        "/main-es2015.9b7bf70c2a8d58febaec.js",
+        "/main-es5.9b7bf70c2a8d58febaec.js",
+        "/manifest.webmanifest",
+        "/polyfills-es2015.2987770fde9daa1d8a2e.js",
+        "/polyfills-es5.6696c533341b95a3d617.js",
+        "/runtime-es2015.edb2fcf2778e7bf1d426.js",
+        "/runtime-es5.edb2fcf2778e7bf1d426.js",
+        "/styles.ad4f998f03f9d022fcc2.css",
+        "/sw.js"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "urls": [
+        "/assets/config.json",
+        "/assets/css/themes/white-blue.css",
+        "/assets/fonts/clock-font.ttf",
+        "/assets/icons/icon-128x128-a.png",
+        "/assets/icons/icon-128x128.png",
+        "/assets/icons/icon-144x144-a.png",
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-152x152-a.png",
+        "/assets/icons/icon-152x152.png",
+        "/assets/icons/icon-16x16.png",
+        "/assets/icons/icon-192x192-a.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-384x384-a.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-512x512-a.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/icons/icon-72x72-a.png",
+        "/assets/icons/icon-72x72.png",
+        "/assets/icons/icon-96x96-a.png",
+        "/assets/icons/icon-96x96.png",
+        "/assets/images/sii.png",
+        "/messaging.json"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/assets/config.json": "b630c139a6af205d6b81b474ec63949476e5ef0c",
+    "/assets/css/themes/white-blue.css": "ea73edd6ac57caf028b75eabc88678023441d88b",
+    "/assets/fonts/clock-font.ttf": "52c7b4233488e7e7251307eaf7e705adb2c5cc62",
+    "/assets/icons/icon-128x128-a.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/assets/icons/icon-128x128.png": "4ad47634980407fb7b9a59573ba680bc19f271e1",
+    "/assets/icons/icon-144x144-a.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/assets/icons/icon-144x144.png": "41a81c3880a6b3af80f65cb0a7af6558d48fb17e",
+    "/assets/icons/icon-152x152-a.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/assets/icons/icon-152x152.png": "e766d36d91e70b5f8d219743f7241eeb66bf0df7",
+    "/assets/icons/icon-16x16.png": "d443033161197863dc77083bfd9d2269cb8fb76c",
+    "/assets/icons/icon-192x192-a.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/assets/icons/icon-192x192.png": "9e72a6e5660388bf2418da27862d08001f3ee1a2",
+    "/assets/icons/icon-384x384-a.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/assets/icons/icon-384x384.png": "e77e09ba8e7f0a1b66de2d094e7ea3e647423ec6",
+    "/assets/icons/icon-512x512-a.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/assets/icons/icon-512x512.png": "07cca43d378460dfa0e4f9968f7933e46904b0b4",
+    "/assets/icons/icon-72x72-a.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/assets/icons/icon-72x72.png": "a7d7fc8ca44b1c99873d9a651a58afc720e9e8c7",
+    "/assets/icons/icon-96x96-a.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/assets/icons/icon-96x96.png": "bfe43d1044d90358cf18e349c81181c6ee8ec5f6",
+    "/assets/images/sii.png": "2bdebb70c94c9a1e021ffc795c2baabc9bab7769",
+    "/favicon.ico": "6647c9665fa448af533367c8035a2facac4c7d31",
+    "/firebase-messaging-sw.js": "5b8d436186727ec7aa4d2439b746d434416e7b23",
+    "/index.html": "32914a18f68b20c925ce08b7b5550625df20f8aa",
+    "/main-es2015.9b7bf70c2a8d58febaec.js": "99536934bb337dfe75c860518120e8870a7ee937",
+    "/main-es5.9b7bf70c2a8d58febaec.js": "5841d225229f5f9499df9565ee4f632beec24e0d",
+    "/manifest.webmanifest": "2b585db72c772687c5145f9882fdde7efaecb9f8",
+    "/messaging.json": "13d7306625ff51203e03eb174adc184177751f7a",
+    "/polyfills-es2015.2987770fde9daa1d8a2e.js": "cf5cbfa9134716054fb479ab21362146cdf1f2ff",
+    "/polyfills-es5.6696c533341b95a3d617.js": "6bff0c03e05bb347d213ad1b3674045eb892d189",
+    "/runtime-es2015.edb2fcf2778e7bf1d426.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/runtime-es5.edb2fcf2778e7bf1d426.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
+    "/styles.ad4f998f03f9d022fcc2.css": "9addf11971cb1738acc496dbe045f06a978e37a4",
+    "/sw.js": "6d1a58712a6cbab175fa7ac0b5982d2d31eda5b5"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
+}

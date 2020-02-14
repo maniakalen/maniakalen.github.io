@@ -1,0 +1,122 @@
+{
+  "api": {
+    "endpoint": {
+      "secure": false,
+      "host": "localhost",
+      "endpoint": "api1/execute.php"
+    },
+    "services": {
+      "login": {
+        "service": "Login",
+        "login": "{username}",
+        "password": "{password}"
+      },
+      "attendance": {
+        "service": "attendance",
+        "action": "inout",
+        "employee": "{username}",
+        "passport": "{passport}",
+        "mocks": [
+          {
+            "success":  true,
+            "error": "0",
+            "message": "",
+            "data": {
+              "1564610400":[
+                {
+                  "inout":"1",
+                  "reportdate":"2019-08-01 08:07:00"
+                },
+                {
+                  "inout":"0",
+                  "reportdate":"2019-08-01 14:56:00"
+                }
+              ],
+              "1564696800":[
+                {
+                  "inout":"1",
+                  "reportdate":"2019-08-02 07:12:00"
+                },
+                {
+                  "inout":"0",
+                  "reportdate":"2019-08-02 10:05:00"
+                },
+                {
+                  "inout":"1",
+                  "reportdate":"2019-08-02 10:33:00"
+                },
+                {
+                  "inout":"0",
+                  "reportdate":"2019-08-02 13:50:00"
+                }
+              ],
+              "1565301600":[
+                {
+                  "inout":"1",
+                  "reportdate":"2019-08-09 07:14:00"
+                },
+                {
+                  "inout":"0",
+                  "reportdate":"2019-08-09 10:01:00"
+                },
+                {
+                  "inout":"1",
+                  "reportdate":"2019-08-09 10:27:00"
+                },
+                {
+                  "inout":"0",
+                  "reportdate":"2019-08-09 15:14:00"
+                }
+              ],
+              "1565560800":[
+                {
+                  "inout":"1",
+                  "reportdate":"2019-08-12 07:47:00"
+                },
+                {
+                  "inout":"0",
+                  "reportdate":"2019-08-12 07:47:59"
+                }
+              ],
+              "1565733600":[
+                {
+                  "inout":"1",
+                  "reportdate":"2019-08-14 07:27:00"
+                },
+                {
+                  "inout":"0",
+                  "reportdate":"2019-08-14 07:28:00"
+                }
+              ]
+            }
+          }
+
+        ]
+      },
+      "state": {
+        "service": "state",
+        "mocks": [
+          {"success": true, "error": "0", "message": "", "data": {"state": "in", "duration": 7114}},
+          {
+            "success":false,
+            "error":"1",
+            "message":"Failed to get message",
+            "data":[]
+          }
+        ]
+      },
+      "saveToken": {
+        "service": "saveToken",
+        "mocks": [{"success": true, "error": "0", "message": "Token saved"}]
+      },
+      "checkIn": {
+        "service": "checkIn",
+        "mocks": [{"success": true, "error": "0", "message": "Checked in"}]
+      },
+      "checkOut": {
+        "service": "checkOut",
+        "mocks": [{"success": true, "error": "0", "message": "Checked out"}]
+      }
+    }
+  }
+}
